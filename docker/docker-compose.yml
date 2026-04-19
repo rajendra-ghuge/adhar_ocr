@@ -1,0 +1,12 @@
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: yolo_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../app:/app/app              # 🔥 ADD THIS
+      - ../app/models:/app/app/models

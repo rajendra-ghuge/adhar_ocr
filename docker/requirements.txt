@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+
+ultralytics==8.4.38
+opencv-python-headless
+pytesseract
+pymupdf==1.23.8
+python-multipart
+Pillow
+
+numpy<2
+
+# 🔥 optimized torch (CPU only)
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
